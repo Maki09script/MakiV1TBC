@@ -263,7 +263,7 @@ CreateButton("Oxy", function()
 end)
 
 CreateButton("Normal Pistol", function()
-    local args = {"Normal P", -1000000, "RACCMETHOD"}
+    local args = {"Normal P", 1, "RACCMETHOD"}
     ReplicatedStorage:WaitForChild("BuyTbcItemEvent"):FireServer(unpack(args))
 end)
 
@@ -311,4 +311,5 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
         MainFrame.Visible = GUIVisible
     end
 end)
+
 
