@@ -249,67 +249,57 @@ end)
 
 CreateButton("Combo 3", function()
     local args = {"Combo 3", 1, "RACCMETHOD"}
-    ReplicatedStorage:WaitForChild("BuyToolEvent"):FireServer(unpack(args))
+    ReplicatedStorage:WaitForChild("BuyTbcItemEvent"):FireServer(unpack(args))
 end)
 
 CreateButton("Pill", function()
     local args = {"Pill", 1, "RACCMETHOD"}
-    ReplicatedStorage:WaitForChild("BuyToolEvent"):FireServer(unpack(args))
+    ReplicatedStorage:WaitForChild("BuyTbcItemEvent"):FireServer(unpack(args))
 end)
 
 CreateButton("Oxy", function()
     local args = {"Oxy Pill", 1, "RACCMETHOD"}
-    ReplicatedStorage:WaitForChild("BuyToolEvent"):FireServer(unpack(args))
+    ReplicatedStorage:WaitForChild("BuyTbcItemEvent"):FireServer(unpack(args))
 end)
 
 CreateButton("Normal Pistol", function()
-    local args = {"Normal P", 1, "RACCMETHOD"}
-    ReplicatedStorage:WaitForChild("BuyToolEvent"):FireServer(unpack(args))
+    local args = {"Normal P", -1000000, "RACCMETHOD"}
+    ReplicatedStorage:WaitForChild("BuyTbcItemEvent"):FireServer(unpack(args))
 end)
 
 CreateButton("Pistolbody", function()
     local args = {"PistolBody", 1, "RACCMETHOD"}
-    ReplicatedStorage:WaitForChild("BuyToolEvent"):FireServer(unpack(args))
+    ReplicatedStorage:WaitForChild("BuyTbcItemEvent"):FireServer(unpack(args))
 end)
 
 CreateButton("SharkFang", function()
     local args = {"SharkFang", 1, "RACCMETHOD"}
-    ReplicatedStorage:WaitForChild("BuyToolEvent"):FireServer(unpack(args))
+    ReplicatedStorage:WaitForChild("BuyTbcItemEvent"):FireServer(unpack(args))
 end)
 
 CreateButton("Lockpick", function()
     local args = {"LOCKPICK", 1, "RACCMETHOD"}
-    ReplicatedStorage:WaitForChild("BuyToolEvent"):FireServer(unpack(args))
+    ReplicatedStorage:WaitForChild("BuyTbcItemEvent"):FireServer(unpack(args))
 end)
 
 CreateButton("Glass", function()
     local args = {"Glass", 1, "RACCMETHOD"}
-    ReplicatedStorage:WaitForChild("BuyToolEvent"):FireServer(unpack(args))
+    ReplicatedStorage:WaitForChild("BuyTbcItemEvent"):FireServer(unpack(args))
 end)
 
 CreateButton("Bottle", function()
     local args = {"Bottle", 1, "RACCMETHOD"}
-    ReplicatedStorage:WaitForChild("BuyToolEvent"):FireServer(unpack(args))
-end)
-
-CreateButton("Board", function()
-    local args = {"Hoverboard", 1, "RACCMETHOD"}
-    ReplicatedStorage:WaitForChild("BuyToolEvent"):FireServer(unpack(args))
+    ReplicatedStorage:WaitForChild("BuyTbcItemEvent"):FireServer(unpack(args))
 end)
 
 CreateButton("Knife", function()
     local args = {"Balistic Knife", 1, "RACCMETHOD"}
-    ReplicatedStorage:WaitForChild("BuyToolEvent"):FireServer(unpack(args))
+    ReplicatedStorage:WaitForChild("BuyTbcItemEvent"):FireServer(unpack(args))
 end)
 
 CreateButton("Blueprint", function()
     local args = {"Blueprint", 1, "RACCMETHOD"}
-    ReplicatedStorage:WaitForChild("BuyToolEvent"):FireServer(unpack(args))
-end)
-
-CreateButton(".50 S", function()
-    local args = {".50 Silencer", 1, "RACCMETHOD"}
-    ReplicatedStorage:WaitForChild("BuyToolEvent"):FireServer(unpack(args))
+    ReplicatedStorage:WaitForChild("BuyTbcItemEvent"):FireServer(unpack(args))
 end)
 
 -- Toggle Key (Press M)
@@ -321,3 +311,4 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
         MainFrame.Visible = GUIVisible
     end
 end)
+
